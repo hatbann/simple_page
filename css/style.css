@@ -6,12 +6,36 @@
 input,
 button {
   border: none;
-}
-
-form {
-  border: none;
   background-color: transparent;
 }
+
+button {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+  color: whitesmoke;
+  font-size: 17px;
+  text-align: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input {
+  padding: 4px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+input::placeholder {
+  color: whitesmoke;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
+
 body {
   position: relative;
 }
@@ -42,13 +66,35 @@ body {
 }
 
 #login-form {
+  margin-top: 250px;
   flex-direction: column;
   align-items: center;
   width: 400px;
+  font-size: 50px;
 }
 
-.login > :first-child {
-  order: 1;
+#login-form > input {
+  height: 100px;
+  width: 100vw;
+  border-bottom: none;
+  color: #222222;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+}
+
+#login-form > input::placeholder {
+  font-family: 'Lato', sans-serif;
+  color: #222222;
+  font-size: 50px;
+}
+
+#login-form > input:focus::placeholder {
+  color: transparent;
+}
+
+#login-form > button {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 #clock {
@@ -65,23 +111,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #greeting {
+  margin-top: 50px;
   font-size: 70px;
-  margin-bottom: 300px;
   text-align: center;
 }
 
+.todo {
+  margin-top: 300px;
+  margin-bottom: 20px;
+}
+
 #todo-form {
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+}
+
+#todo-form > input {
+  width: 200px;
+}
+
+#todo-list li {
+  color: #ffebfe;
+  list-style: none;
+  width: 150px;
+  text-align: center;
 }
 
 #quote {
+  color: rgb(232, 244, 255);
   font-family: 'Merriweather', serif;
   display: flex;
   flex-direction: column;
