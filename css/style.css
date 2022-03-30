@@ -3,24 +3,45 @@
   margin: 0;
 }
 
+input,
+button {
+  border: none;
+}
+
+form {
+  border: none;
+  background-color: transparent;
+}
+body {
+  position: relative;
+}
+
 .hidden {
   display: none;
+}
+
+.flex {
+  display: flex;
 }
 
 #bgimage {
   height: 100vh;
   background-size: cover;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
 }
 
 .login {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 #login-form {
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
@@ -28,6 +49,29 @@
 
 .login > :first-child {
   order: 1;
+}
+
+#clock {
+  position: fixed;
+  font-family: 'Lato', sans-serif;
+  top: 15px;
+  left: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.contents {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#greeting {
+  font-size: 70px;
+  margin-bottom: 300px;
+  text-align: center;
 }
 
 #todo-form {
@@ -49,4 +93,11 @@
   text-align: center;
   font-size: 25px;
   white-space: normal;
+}
+
+#weather {
+  top: 15px;
+  right: 15px;
+  position: fixed;
+  font-family: 'Lato', sans-serif;
 }

@@ -11,11 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <title>Momentum</title>
   </head>
   <body>
-    <div class="login">
-      <form id="login-form" class="hidden">
+    <div class="login flex">
+      <form id="login-form" class="hidden flex">
         <input
           required
           maxlength="15"
@@ -24,16 +30,18 @@
         />
         <button type="submit">Login</button>
       </form>
-      <h2 id="clock"></h2>
     </div>
-    <h1 class="hidden" id="greeting"></h1>
-    <form action="" id="todo-form">
-      <input type="text" placeholder="할 일을 입력하세요" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <h2 id="clock"></h2>
+    <div class="contents">
+      <h1 class="hidden" id="greeting"></h1>
+      <form action="" id="todo-form">
+        <input type="text" placeholder="할 일을 입력하세요" required />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div id="weather">
       <span></span>
