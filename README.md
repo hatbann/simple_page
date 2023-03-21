@@ -24,6 +24,8 @@ vanilla js 를 이용해 todolist, quotes, weather, login 을 구현한 간단�
 <img src="readme/todolist.gif" width= "500px"/>
 </div>
 
+<br>
+
 - localStorage에 todos로 배열을 저장해서 새로고침하거나 다시 페이지에 접속해도 값을 유지할 수 있습니다
 - 로컬스토리지에서 가져올때는 JSON.stringify로 json형태로 가져와서 화면에 뿌려줍니다.
 - 투두를 삭제할 때 배열의 filter메소드를 통해 todo의 id와 비교해 배열에서 삭제합니다.
